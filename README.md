@@ -3,29 +3,31 @@
 
 With Tabber, creating a menu with tabs in Unity is pretty easy. In the example, I have the following UI element structure:
 
+```
 Canvas
-+-- Tabber Menu (Panel)
-|	+-- Tabs (Tabs)
-|	|	+-- Btn Tab 1
-|	|	+-- Btn Tab 2
-|	|	+-- Btn Tab 3
-|	|	+-- Btn Tab 4
-|	+-- Panels
-|	|	+-- Panel 1
-|	|	+-- Panel 2
-|	|	+-- Panel 3
-|	|	+-- Nested Panel
-|	|	+-- Tabs (Tabs)
-|	|	|	+-- Btn Tab 1
-|	|	|	+-- Btn Tab 2
-|	|	|	+-- Btn Tab 3
-|	|	+-- Panels
-|	|	|	+-- Panel 1
-|	|	|	+-- Panel 2
-|	|	|	+-- Panel 3
+└── Tabber Menu (Panel)
+|	└── Tabs (Tabs)
+|	|	└── Btn Tab 1
+|	|	└── Btn Tab 2
+|	|	└── Btn Tab 3
+|	|	└── Btn Tab 4
+|	└── Panels
+|	|	└── Panel 1
+|	|	└── Panel 2
+|	|	└── Panel 3
+|	|	└── Nested Panel
+|	|	└── Tabs (Tabs)
+|	|	|	└── Btn Tab 1
+|	|	|	└── Btn Tab 2
+|	|	|	└── Btn Tab 3
+|	|	└── Panels
+|	|	|	└── Panel 1
+|	|	|	└── Panel 2
+|	|	|	└── Panel 3
+```
 
 With this in mind, we will follow the below steps:
-- Attach `Tabber` to `Tabber Menu`
+- Attach `Tabber` component to `Tabber Menu`
 - Add each panel under `Tabber Menu`->`Panels` to the `Panels` property on `Tabber Menu`
 - Attach `Tabs` Component to `Tabber Menu`->`Tabs` - Component will update with the tab objects automatically at runtime
 - Add `Tabber Menu` and `Tabber Menu`->`Tabs` as parameters to two `On Click()` calls on each Button.
