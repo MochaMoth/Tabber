@@ -3,18 +3,23 @@ using UnityEngine.UI;
 
 public class Tabs : MonoBehaviour
 {
+    [System.NonSerialized]
     public Button[] tabs;
+    public Tabber tabber;
 
     private void Awake()
     {
-        if (tabs.Length == 0)
+        tabs = new Button[transform.childCount];
+        for (int i = 0; i < transform.childCount; i++)
         {
-            tabs = new Button[transform.childCount];
-            for (int i = 0; i < transform.childCount; i++)
-                tabs[i] = transform.GetChild(i).GetComponent<Button>();
+            int index = i;
+            tabs[i] = transform.GetChild(i).GetComponent<Button>();
+            tabs[i].onClick.AddListener(() => { tabber.CycleTo(index); });
+            tabs[i].onClick.AddListener(() => { SetTab(index); });
         }
 
         SetTab(0);
+        tabber.tabs = this;
     }
 
     public void SetTab(int tabIndex)

@@ -4,10 +4,12 @@ using UnityEngine;
 public class Tabber : MonoBehaviour
 {
     [Reorderable] public GameObjects panels;
-    public Tabs tabs;
     public int activePanel = 0;
     public bool retainPageOnDisable = false;
     public bool debugMode = false;
+
+    [System.NonSerialized]
+    public Tabs tabs;
     
     public virtual void Start()
     {
