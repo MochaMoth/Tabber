@@ -35,4 +35,8 @@ With this in mind, we will follow the below steps:
 
 After these steps, you should be able to play and use the tab buttons to change which panel is being displayed. If you want the menu to remember which tab was used last when deactivating/reactivating the menu, turn on `Retain Page On Disable` on the `Tabber` component.
 
+![In Game](Screens/InGame.png)
+![Tabber](Screens/Inspector_Tabber.png)
+![Tabs](Screens/Inspector_Tabs.png)
+
 You can use the `Cycle Forward`, `Cycle Backward`, and `Cycle To` buttons to show the necessary panels in the editor. When using `Cycle To`, put the desired index in the `Active Panel` property before clicking, and you will cycle to that panel.
