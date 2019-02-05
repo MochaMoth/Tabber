@@ -16,14 +16,14 @@ Canvas
 |	|	└── Panel 2
 |	|	└── Panel 3
 |	|	└── Nested Panel
-|	|	└── Tabs (Tabs)
-|	|	|	└── Btn Tab 1
-|	|	|	└── Btn Tab 2
-|	|	|	└── Btn Tab 3
-|	|	└── Panels
-|	|	|	└── Panel 1
-|	|	|	└── Panel 2
-|	|	|	└── Panel 3
+|	|	|	└── Tabs (Tabs)
+|	|	|	|	└── Btn Tab 1
+|	|	|	|	└── Btn Tab 2
+|	|	|	|	└── Btn Tab 3
+|	|	|	└── Panels
+|	|	|	|	└── Panel 1
+|	|	|	|	└── Panel 2
+|	|	|	|	└── Panel 3
 ```
 
 With this in mind, we will follow the below steps:
