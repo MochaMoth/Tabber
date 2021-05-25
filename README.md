@@ -1,4 +1,8 @@
 # Tabber for Unity
+
+## Important
+This project is now outdated. The new one can be found [Here](https://github.com/FedoraDevStudios/Panel-Tabber) and can be installed via the package manager. The new project no longer requires Reorderable-List, however it does require [Odin Inspector](https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041).
+
 ### requires [Reorderable-List](https://github.com/cfoulston/Unity-Reorderable-List) which is included.
 
 With Tabber, creating a menu with tabs in Unity is pretty easy. In the example, I have the following UI element structure:
